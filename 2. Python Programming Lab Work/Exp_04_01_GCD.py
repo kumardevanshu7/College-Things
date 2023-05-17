@@ -11,3 +11,7 @@ num_02 = int(input("Enter Second Number: "))
 GCD = math.gcd(num_01, num_02)
 
 print("The GCD of", num_01, "and", num_02, "is", GCD, ".")
+
+print("\n\n\n Name: Kumar Devanshu \t Roll No: 2200970139009 \t Section: IT-A2")
+
+print("\n")
