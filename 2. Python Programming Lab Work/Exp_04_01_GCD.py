@@ -1,4 +1,4 @@
-# Experiment No. 4 - Part A - Compute the GCD of Two Numbers using Math Function
+# Python Practical 04 - Part A - Compute the GCD of Two Numbers using Math Function
 
 # import the math function
 import math
