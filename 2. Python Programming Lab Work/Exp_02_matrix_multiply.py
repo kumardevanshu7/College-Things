@@ -14,6 +14,6 @@ for i in range(len(x)):
 for r in ans:
     print(r)
 
-print("\n\n\n\n Name: Kumar Devanshu \t Roll No: 2200970139009 \t Section: IT-A2")
+print("\n\n\n Name: Kumar Devanshu \t Roll No: 2200970139009 \t Section: IT-A2")
 
-print("\n\n")
+print("\n")
