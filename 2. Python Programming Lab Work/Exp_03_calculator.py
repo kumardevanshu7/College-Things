@@ -1,37 +1,41 @@
 # create a operation function
-def add(num1, num2):
-    return num1 + num2
+def add(x, y):
+    return x + y
 
-def subtract(num1, num2):
-    return num1 - num2
+def subtract(x, y):
+    return x - y
 
-def multiply(num1, num2):
-    return num1 * num2
+def multiply(x, y):
+    return x * y
 
-def divide(num1, num2):
-    if num2 == 0:
-        print("Error: Cannot divide by zero!")
+def divide(x, y):
+    if y == 0:
+        print("Cannot divide by zero!")
         return None
-    return num1 / num2
+    return x / y
 
-# Get user input
-num1 = float(input("Enter the first number: "))
-operator = input("Enter an operator (+, -, *, /): ")
-num2 = float(input("Enter the second number: "))
+# taking user input
+x = float(input("Type the first number: "))
+operator = input("Select an operator (+, -, *, /): ")
+y = float(input("Type the second number: "))
 
-# Perform calculation based on the operator
+# Perform calculation
 if operator == "+":
-    result = add(num1, num2)
+    ans = add(x, y)
 elif operator == "-":
-    result = subtract(num1, num2)
+    ans = subtract(x, y)
 elif operator == "*":
-    result = multiply(num1, num2)
+    ans = multiply(x, y)
 elif operator == "/":
-    result = divide(num1, num2)
+    ans = divide(x, y)
 else:
-    print("Error: Invalid operator!")
-    result = None
+    print("INVALID")
+    ans = None
 
 # Print the result
-if result is not None:
-    print("Result:", result)
+if ans is not None:
+    print("Your Ans:", ans)
+
+    print("\n\n\n\n Name: Kumar Devanshu \t Roll No: 2200970139009 \t Section: IT-A2")
+
+print("\n\n")
