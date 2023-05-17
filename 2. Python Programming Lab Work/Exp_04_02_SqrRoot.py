@@ -1,4 +1,4 @@
-# Experiment No. 4 - Part B - Find the square root of a number using math function
+# Python Practical 04 - Part B - Find the square root of a number using math function
 
 # import the math function
 import math
