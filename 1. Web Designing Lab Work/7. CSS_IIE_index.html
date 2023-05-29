@@ -1,0 +1,52 @@
+<!-- Practical 07 : To create an html file by applying the different styles using inline, external & internal style sheets. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using Inline + Internal & External</title>
+    <link rel="stylesheet" href="/7. CSS_IIE_style.css" />
+    <style>
+        /* using internal css */
+      h2 {
+        color: cadetblue;
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+        <!-- using inline css -->
+      <h1 style="color: #333">Kumar Devanshu</h1>
+      <h2>Web Developer</h2>
+
+      <div>
+        <h2>Education</h2>
+        <ul>
+          <li>Bachelor of Technology in Information Technology</li>
+          <li>Galgotia College of Engineering (2022-2025)</li>
+        </ul>
+      </div>
+
+      <div class="extra">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML 5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+      <div class="extra">
+        <h2>Contact</h2>
+        <p>Email: devanshukd007@gmail.com</p>
+        <p>Mobile No: 8178612449</p>
+      </div>
+    </div>
+  </body>
+</html>
