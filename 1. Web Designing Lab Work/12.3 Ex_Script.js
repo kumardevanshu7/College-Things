@@ -1,4 +1,4 @@
-// script.js
+// c. External JavaScript : JavaScript Part
 function displayMessage() {
     alert("Hello, Devanshu!");
   }
