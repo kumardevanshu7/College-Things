@@ -1,13 +1,15 @@
+# Python Practical 12 : To write a python program to check if a number and string is a palindrome or not.
+
 def is_palindrome(input_str):
     reversed_str = input_str[::-1]
     return input_str == reversed_str
 
-number = int(input("Enter a number: "))
-number_str = str(number)
-if is_palindrome(number_str):
-    print("The number", number, "is a palindrome.")
+nums = int(input("Enter a number: "))
+nums_str = str(nums)
+if is_palindrome(nums_str):
+    print("The number", nums, "is a palindrome.")
 else:
-    print("The number", number, "is not a palindrome.")
+    print("The number", nums, "is not a palindrome.")
 
 string = input("Enter a string: ")
 if is_palindrome(string):
