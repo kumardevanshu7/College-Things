@@ -1,29 +1,31 @@
-def reverse_number(number):
-    reversed_number = 0
+# Python Practical 10 : To write a python program to reverse a number and also to calculate the average of number in a list.
 
-    while number > 0:
-        digit = number % 10
+def reverse_num(num):
+    reversed_num = 0
 
-        reversed_number = (reversed_number * 10) + digit
+    while num > 0:
+        digit = num % 10
 
-        number = number // 10
+        reversed_num = (reversed_num * 10) + digit
 
-    return reversed_number
+        num = num // 10
+
+    return reversed_num
 
 
-def calculate_average(numbers):
-    if len(numbers) == 0:
+def calculate_average(nums):
+    if len(nums) == 0:
         return None
 
-    total = sum(numbers)
+    total = sum(nums)
 
-    average = total / len(numbers)
+    average = total / len(nums)
 
     return average
 
-input_number = 12345
-reversed_result = reverse_number(input_number)
-print("The reverse of", input_number, "is", reversed_result)
+input_num = 12345
+reversed_result = reverse_num(input_num)
+print("The reverse of", input_num, "is", reversed_result)
 
 number_list = [5, 9, 2, 11, 3, 8, 6]
 average_value = calculate_average(number_list)
