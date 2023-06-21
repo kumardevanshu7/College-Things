@@ -1,4 +1,4 @@
-# Python Practical 03 : To write a python program  to create a calculator.
+# Python Practical 03 : To write a python program  to create a Calculator.
 
 # create a operation function
 def add(x, y):
