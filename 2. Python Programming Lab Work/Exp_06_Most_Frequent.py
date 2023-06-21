@@ -12,7 +12,7 @@ def most_frequent_words(file):
 
     most_frequent = word_counts.most_common(5)
 
-    print("The most frequent words are: ")
+    print("Most frequent words are: ")
 
     for word, count in most_frequent: print(f"{word}:{count}")
 
