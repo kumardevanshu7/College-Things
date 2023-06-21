@@ -1,18 +1,20 @@
-def find_maximum(numbers):
-    if len(numbers) == 0:
+# Python Practical 9. To write a python program to find the maximum of a list of numbers.
+
+def find_max(nums):
+    if len(nums) == 0:
         return None
     
-    maximum = numbers[0]
+    max = nums[0]
 
-    for num in numbers[1:]:
-        if num > maximum:
-            maximum = num
+    for num in nums[1:]:
+        if num > max:
+            max = num
 
-    return maximum
+    return max
 
-number_list = [5, 9, 2, 11, 3, 8, 6]
-maximum_value = find_maximum(number_list)
-print("The maximum value in the list is:", maximum_value)
+num_list = [5, 9, 2, 11, 3, 8, 6]
+max_value = find_max(num_list)
+print("The maximum value in the list is:", max_value)
 
 print("\n\n\n Name: Kumar Devanshu \t Roll No: 2200970139009 \t Section: IT-A2")
 

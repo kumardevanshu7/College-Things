@@ -1,4 +1,6 @@
-def count_word_occurrences(string, word):
+# Python Practical 08. To write a python program that counts the number of times the word "name" occurs in a string.
+
+def count_word(string, word):
     count = 0
     words = string.split()
 
@@ -12,7 +14,7 @@ def count_word_occurrences(string, word):
 
 input_string = "My name is Dev. What is your name? My name is not Tushpendra."
 target_word = "name"
-occurrences = count_word_occurrences(input_string, target_word)
+occurrences = count_word(input_string, target_word)
 print("Word '{}' occurs {} times.".format(target_word, occurrences))
 
 print("\n\n\n Name: Kumar Devanshu \t Roll No: 2200970139009 \t Section: IT-A2")
