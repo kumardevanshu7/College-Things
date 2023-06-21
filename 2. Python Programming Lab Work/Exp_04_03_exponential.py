@@ -7,9 +7,9 @@ import math
 num = int(input("Enter Number: "))
 
 # using math.exp funtion from math library
-result = math.exp(num)
+ans = math.exp(num)
 
-print(result)
+print(ans)
 
 print("\n\n\n Name: Kumar Devanshu \t Roll No: 2200970139009 \t Section: IT-A2")
 
