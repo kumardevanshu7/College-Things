@@ -1,6 +1,6 @@
 # Python Practical 07 - To write a python program to find the most frequent words in a text file.
 
-def square_root(num):
+def sqr_root(num):
     sqr = num / 2
     threshold = 0.0001
 
@@ -11,7 +11,7 @@ def square_root(num):
 
 num = 16
 
-ans = square_root(num)
+ans = sqr_root(num)
 
 print(f"The Square root of {num} is : {ans}")
 
