@@ -12,9 +12,9 @@ def count_word(string, word):
 
     return count
 
-input_string = "My name is Dev. What is your name? My name is not Tushpendra."
+input = "My name is Dev. What is your name? My name is not Tushpendra."
 target_word = "name"
-occurrences = count_word(input_string, target_word)
+occurrences = count_word(input, target_word)
 print("Word '{}' occurs {} times.".format(target_word, occurrences))
 
 print("\n\n\n Name: Kumar Devanshu \t Roll No: 2200970139009 \t Section: IT-A2")
