@@ -13,6 +13,7 @@ def count_word(string, word):
     return count
 
 input = "My name is Dev. What is your name? My name is not Tushpendra."
+print(input)
 target_word = "name"
 occurrences = count_word(input, target_word)
 print("Word '{}' occurs {} times.".format(target_word, occurrences))
