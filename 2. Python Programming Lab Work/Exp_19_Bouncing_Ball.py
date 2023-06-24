@@ -1,6 +1,6 @@
 # Python Practical 19 : To write a python program to simulate bouncing ball in Pygame.
 
-# this will not work in VS Code - SO kindly use Python Proper IDE.
+# this will not work in VS Code - SO kindly use Python Proper IDE. "That's why i comment all the Codes"
 
 # import pygame 
 # import random
