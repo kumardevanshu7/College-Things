@@ -1,4 +1,4 @@
-# Python Practical 07 - To write a python program to find the most frequent words in a text file.
+# Python Practical 07 - To write a python program to find the square root of a number (Newton’s Method).
 
 def sqr_root(num):
     sqr = num / 2
