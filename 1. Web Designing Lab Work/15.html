@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Mouse Events</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      margin: 50px auto;
+      text-align: center;
+      line-height: 200px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">Click me!</div>
+
+  <script>
+    var box = document.getElementById("box");
+
+    box.addEventListener("mouseover", function() {
+      box.style.backgroundColor = "blue";
+    });
+
+    box.addEventListener("mouseout", function() {
+      box.style.backgroundColor = "red";
+    });
+
+    box.addEventListener("mousedown", function() {  
+      box.style.backgroundColor = "green";
+    });
+
+    box.addEventListener("click", function() {
+      alert("You clicked the box!");
+    });
+  </script>
+</body>
+</html>

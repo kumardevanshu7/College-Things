@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mouse Hover Effect</title>
+    <style>
+      .content {
+        display: inline-block;
+        padding: 20px;
+        background-color: #ff8c8c;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      function showNewContent() {
+        var image = document.getElementById("newImage");
+        var text = document.getElementById("newText");
+        image.classList.remove("hidden");
+        text.classList.remove("hidden");
+      }
+
+      function hideNewContent() {
+        var image = document.getElementById("newImage");
+        var text = document.getElementById("newText");
+        image.classList.add("hidden");
+        text.classList.add("hidden");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Mouse Hover Effect</h1>
+    
+      <div
+        class="content"
+        onmouseover="showNewContent()"
+        onmouseout="hideNewContent()"
+      >
+        <h2>Hover over me</h2>
+        <p>Existing Content</p>
+      </div>
+      <div id="newImage" class="hidden">
+        <img
+          src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+          width="300"
+        />
+      </div>
+      <div id="newText" class="hidden">
+        <p>This is HTML.</p>
+      </div>
+
+  </body>
+</html>

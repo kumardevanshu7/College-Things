@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Registration Form</title>
+<script>
+function validateForm() {
+  // Get the values of the form fields
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var email = document.getElementById("email").value;
+
+  // Validate the username
+  if (username.length < 5) {
+    alert("Username must be at least 5 characters long.");
+    return false;
+  }
+
+  // Validate the password
+  if (password.length < 8) {
+    alert("Password must be at least 8 characters long.");
+    return false;
+  }
+
+  // Validate the email address
+  var re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
+  if (!re.test(email)) {
+    alert("Invalid email address.");
+    return false;
+  }
+
+  // All good!
+  return true;
+}
+</script>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form onsubmit="return validateForm()">
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <input type="email" id="email" placeholder="Email">
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

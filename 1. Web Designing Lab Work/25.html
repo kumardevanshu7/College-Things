@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar Display</title>
+</head>
+<body>
+  <h1>Calendar Display</h1>
+  
+  <label for="month">Select Month:</label>
+  <select id="month">
+    <option value="1">January</option>
+    <option value="2">February</option>
+    <option value="3">March</option>
+    <option value="4">April</option>
+    <option value="5">May</option>
+    <option value="6">June</option>
+    <option value="7">July</option>
+    <option value="8">August</option>
+    <option value="9">September</option>
+    <option value="10">October</option>
+    <option value="11">November</option>
+    <option value="12">December</option>
+  </select>
+  
+  <label for="year">Select Year:</label>
+  <select id="year">
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <!-- Add more years as needed -->
+  </select>
+  
+  <button onclick="displayCalendar()">Display Calendar</button>
+  
+  <div id="calendar"></div>
+
+  <script>
+    function displayCalendar() {
+      var monthInput = document.getElementById("month");
+      var yearInput = document.getElementById("year");
+      var month = parseInt(monthInput.value);
+      var year = parseInt(yearInput.value);
+
+      var calendar = generateCalendar(month, year);
+      var calendarDiv = document.getElementById("calendar");
+      calendarDiv.innerHTML = calendar;
+    }
+
+    function generateCalendar(month, year) {
+      var calendar = "<table>";
+
+      // Generate the calendar header
+      calendar += "<tr><th colspan='7'>" + year + "</th></tr>";
+      calendar += "<tr><th colspan='7'>" + getMonthName(month) + "</th></tr>";
+      calendar += "<tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>";
+
+      // Generate the calendar body
+      var firstDay = new Date(year, month - 1, 1).getDay();
+      var daysInMonth = new Date(year, month, 0).getDate();
+      var day = 1;
+
+      for (var week = 0; week < 6; week++) {
+        calendar += "<tr>";
+
+        for (var weekday = 0; weekday < 7; weekday++) {
+          if (week === 0 && weekday < firstDay) {
+            calendar += "<td></td>"; // Leave empty for previous month's days
+          } else if (day > daysInMonth) {
+            calendar += "<td></td>"; // Leave empty for remaining days
+          } else {
+            calendar += "<td>" + day + "</td>";
+            day++;
+          }
+        }
+
+        calendar += "</tr>";
+      }
+
+      calendar += "</table>";
+      return calendar;
+    }
+
+    function getMonthName(month) {
+      var months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ];
+      return months[month - 1];
+    }
+  </script>
+</body>
+</html>
