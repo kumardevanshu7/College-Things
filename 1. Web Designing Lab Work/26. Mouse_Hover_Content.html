@@ -1,3 +1,5 @@
+<!-- Practical 26 : To create a html page to display a new image & text when the mouse comes over the existing content in the page. -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,24 +33,23 @@
   </head>
   <body>
     <h1>Mouse Hover Effect</h1>
-    
-      <div
-        class="content"
-        onmouseover="showNewContent()"
-        onmouseout="hideNewContent()"
-      >
-        <h2>Hover over me</h2>
-        <p>Existing Content</p>
-      </div>
-      <div id="newImage" class="hidden">
-        <img
-          src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
-          width="300"
-        />
-      </div>
-      <div id="newText" class="hidden">
-        <p>This is HTML.</p>
-      </div>
 
+    <div
+      class="content"
+      onmouseover="showNewContent()"
+      onmouseout="hideNewContent()"
+    >
+      <h2>Hover over me</h2>
+      <p>Existing Content</p>
+    </div>
+    <div id="newImage" class="hidden">
+      <img
+        src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+        width="300"
+      />
+    </div>
+    <div id="newText" class="hidden">
+      <p>This is HTML.</p>
+    </div>
   </body>
 </html>
