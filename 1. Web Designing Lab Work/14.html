@@ -1,34 +1,36 @@
+<!-- Practical 14 : To create an html file to demonstrate the Script Pop-Up Box. -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Script Pop-Up Box</title>
-<script>
-// Alert box
-function alertBox() {
-  alert("This is an alert box.");
-}
+  <head>
+    <title>Script Pop-Up Box</title>
+    <script>
+      // Alert box
+      function alertBox() {
+        alert("This is an alert box.");
+      }
 
-// Confirm box
-function confirmBox() {
-  var result = confirm("Are you sure?");
-  if (result) {
-    alert("You clicked OK.");
-  } else {
-    alert("You clicked Cancel.");
-  }
-}
+      // Confirm box
+      function confirmBox() {
+        var result = confirm("Are you sure?");
+        if (result) {
+          alert("You clicked OK.");
+        } else {
+          alert("You clicked Cancel.");
+        }
+      }
 
-// Prompt box
-function promptBox() {
-  var value = prompt("Enter your name:");
-  alert("Your name is " + value + ".");
-}
-</script>
-</head>
-<body>
-<h1>Script Pop-Up Box</h1>
-<button onclick="alertBox()">Alert Box</button>
-<button onclick="confirmBox()">Confirm Box</button>
-<button onclick="promptBox()">Prompt Box</button>
-</body>
+      // Prompt box
+      function promptBox() {
+        var value = prompt("Enter your name:");
+        alert("Your name is " + value + ".");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Script Pop-Up Box</h1>
+    <button onclick="alertBox()">Alert Box</button>
+    <button onclick="confirmBox()">Confirm Box</button>
+    <button onclick="promptBox()">Prompt Box</button>
+  </body>
 </html>
