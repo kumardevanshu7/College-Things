@@ -1,0 +1,37 @@
+<!-- Practical 16 : To create an html file to Implementation of JavaScript Objects. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Objects</title>
+    <script>
+      // Define a JavaScript object
+      var person = {
+        Name: "Devanshu",
+        occupation: "Developer",
+        getFullName: function () {
+          return this.Name;
+        },
+      };
+
+      // Access object properties
+      var fullName = person.Name;
+      var occupation = person.occupation;
+
+      // Call object method
+      var personFullName = person.getFullName();
+
+      // Display object data on the webpage
+      function displayData() {
+        var output = document.getElementById("output");
+        output.innerHTML =
+          "Name: " + fullName + "<br>" + "Occupation: " + occupation + "<br>";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript Objects</h1>
+    <button onclick="displayData()">Display Data</button>
+    <div id="output"></div>
+  </body>
+</html>
